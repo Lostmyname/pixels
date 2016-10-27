@@ -1,7 +1,7 @@
 {
-  "name": "example-node-server",
+  "name": "pixels",
   "version": "1.0.0",
-  "description": "Example Node Server w/ Babel",
+  "description": "A microservice for 3rd party tracking pixels",
   "main": "lib/index.js",
   "scripts": {
     "start": "babel-node lib/index.js",
@@ -20,6 +20,7 @@
     "nodemon": "^1.10.0"
   },
   "dependencies": {
+    "babel-cli": "^6.18.0",
     "cookie-parser": "^1.4.3",
     "dotenv": "^2.0.0",
     "express": "^4.14.0",
