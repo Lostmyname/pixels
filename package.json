@@ -5,7 +5,6 @@
   "main": "lib/index.js",
   "scripts": {
     "start": "nodemon lib/index.js --exec babel-node --presets es2015,stage-2",
-    "build": "babel lib -d dist",
     "serve": "node dist/index.js",
     "test": "mocha --compilers js:babel-register"
   },
@@ -21,6 +20,7 @@
   },
   "dependencies": {
     "cookie-parser": "^1.4.3",
+    "dotenv": "^2.0.0",
     "express": "^4.14.0",
     "uuid": "^2.0.3"
   }
