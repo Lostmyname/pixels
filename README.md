@@ -1,4 +1,11 @@
-# Example Node Server w/ Babel
+# LMN Pixels
+
+_A microservice for 3rd party tracking pixels_
+
+### Configuration
+
+`DATABASE_URL` The postgres database to connect to
+`PIXEL_DOMAIN` The domain to restrict the pixel to (e.g. `.lostmy.name`)
 
 ### Getting Started
 
