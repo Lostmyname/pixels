@@ -2,6 +2,16 @@
 
 _A microservice for 3rd party tracking pixels_
 
+This service is a way for third parties to log requests of a device.
+On a GET requests:
+1. the service finds or creates a cookie id
+1. stores the request parameters with the cookie id and a timestamp
+1. returns an appropriate response with the cookie id
+
+Any websites hosted on the same domain as this tracking service,
+or a subdomain thereof, can access the cookie to associate behaviour with the
+tracking data.
+
 ### Configuration
 
 `DATABASE_URL` The postgres database to connect to
